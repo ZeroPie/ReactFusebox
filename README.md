@@ -1,5 +1,7 @@
-# Fusebox and react without Babel
-
+# Fusebox and React Example
+- Syntetic Imports Disallowed 
+- No Babel
+- Routing 
 
 ```
 npm install
