@@ -3,9 +3,8 @@ import * as React from "react";
 const Schedule = () => (
   <div>
     <ul>
-      <li>6/5 @ Evergreens</li>
-      <li>6/8 vs Kickers</li>
-      <li>6/14 @ United</li>
+      <li>Evergreens</li>
+      <li>Kickers</li>
     </ul>
   </div>
 )
