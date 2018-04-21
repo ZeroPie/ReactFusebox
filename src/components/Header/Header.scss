@@ -1,0 +1,37 @@
+@import "../../styles/variables.scss";
+
+header {
+    display: grid;
+    background: $darkPrimaryColor;
+}
+
+.navigation {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    list-style: none;
+    grid-auto-columns: 1fr;
+}
+
+.link {
+
+    a {
+        color: $primaryText;  
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    a:active {
+        text-decoration: none;
+    }
+}

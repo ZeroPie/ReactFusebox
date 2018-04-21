@@ -1,4 +1,4 @@
-const { FuseBox, Sparky, WebIndexPlugin, SVGPlugin, CSSPlugin, QuantumPlugin } = require("fuse-box");
+const { FuseBox, Sparky, WebIndexPlugin, SVGPlugin, CSSPlugin, QuantumPlugin, SassPlugin, CSSResourcePlugin } = require("fuse-box");
 const { src, task, watch, context, fuse } = require("fuse-box/sparky");
 
 
@@ -11,7 +11,7 @@ context(class {
             hash: this.isProduction,
             useTypescriptCompiler : true,
             plugins: [
-                CSSPlugin(),
+                [SassPlugin(), CSSPlugin()],
                 SVGPlugin(),
                 WebIndexPlugin({
                     template : "src/index.html"
